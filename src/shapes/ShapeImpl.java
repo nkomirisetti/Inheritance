@@ -7,13 +7,11 @@ public abstract class ShapeImpl implements Shape {
 	protected Color lineColor;
 	protected Color fillColor;
 	protected int position;
-	protected String nameOfShape;
 	
-	public ShapeImpl(Color lineColor, Color fillColor, int position, String nameOfShape) {
+	public ShapeImpl(Color lineColor, Color fillColor, int position) {
 		this.lineColor = lineColor;
 		this.fillColor = fillColor;
 		this.position = position;
-		this.nameOfShape = nameOfShape;
 	}
 
 	@Override
@@ -35,7 +33,5 @@ public abstract class ShapeImpl implements Shape {
 	public abstract int getArea();
 
 	@Override
-	public String getNameOfShape() {
-		return nameOfShape;
-	}
+	public abstract String getNameOfShape();
 }
